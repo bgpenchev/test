@@ -38,7 +38,7 @@ jobs:
       - name: Execute remote SSH commands
         uses: appleboy/ssh-action@v1
         with:
-          host: penchev.us
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
