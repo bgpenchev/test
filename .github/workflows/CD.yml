@@ -32,6 +32,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/my-app
+            cd ~/test
             git pull origin main
-            ./restart_service.sh
+            touch BORIS
