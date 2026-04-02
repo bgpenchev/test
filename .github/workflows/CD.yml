@@ -34,6 +34,7 @@ jobs:
           echo test, and deploy your project.
   deploy:
     runs-on: ubuntu-latest
+    environment: Test Automation
     steps:
       - name: Execute remote SSH commands
         uses: appleboy/ssh-action@v1
